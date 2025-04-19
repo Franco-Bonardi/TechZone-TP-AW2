@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Registro</title>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <p>Complete los siguientes datos para dar de alta su usuario en nuestro sistema</p>
+
+    <br>
+
+    <form action="" method="post">
+        <div>
+            <label for="txtNombre">
+                <b>Nombre:</b>
+            </label>
+            <br>
+            <input type="text" id="txtNombre" name="txtNombre" class="" placeholder="Ingrese su nombre" required>
+            <br><br>
+            <label for="txtApellido">
+                <b>Apellido:</b>
+            </label>
+            <br>
+            <input type="text" id="txtApellido" name="txtApellido" class="" placeholder="Ingrese su apellido" required>
+        </div>
+
+        <div>
+            <br>
+            <label for="txtEmail">
+                <b>Email:</b>
+            </label>
+            <br>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="suemail@ejemplo.com" required>
+            <br><br>
+            <label for="txtContraseña">
+                <b>Contraseña:</b>
+            </label>
+            <br>
+            <input type="password" name="txtContraseña" id="txtContraseña" placeholder="Ingrese su contraseña" required>
+        </div>
+
+        <div>
+            <br>
+            <label for="txtDireccion">
+                <b>Dirección:</b>
+            </label>
+            <br>
+            <input type="text" id="txtDireccion" name="txtDireccion" class="" placeholder="Ingrese su dirección" required>
+            <br><br>
+            <label for="opcionEntrega">
+                <b>Forma de entrega de sus compras:</b>
+            </label>
+            <br>
+            <label for="opcionLocal">
+                <input type="radio" name="opcionEntrega" id="opcionLocal"> Retiro en local
+            </label>
+            <br>
+            <label for="opcionEnvio">
+                <input type="radio" name="opcionEntrega" id="opcionEnvio"> Envío a domicilio
+            </label>
+        </div>
+
+        <div>
+            <br>
+            <label for="date">
+                <b>Fecha de nacimiento:</b>
+            </label>
+            <br>
+            <input type="date" name="date" id="date" required>
+        </div>
+
+        <div>
+            <br><br>
+            <input type="submit" value="Registrarse">
+        </div>
+    </form>
+</body>
+</html>

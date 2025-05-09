@@ -1,0 +1,49 @@
+.navbar{
+    background-color: #008aa8;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.titulo-pagina{
+    color: #F514E1;
+    font-weight: bolder;
+}
+
+.subtitulo-pagina{
+    font-weight: bold;
+}
+
+.novedades{
+    font-weight: bold;
+}
+
+.text-secondary{
+    font-style: italic;
+}
+
+.btn-primary{
+    background-color: #008aa8;
+}
+
+.titulo-formulario{
+    color:#F514E1;
+}
+
+.titulo-prod{
+    color: #008aa8;
+}
+
+footer{
+    background-color:#0089a849;
+    min-height: 100px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

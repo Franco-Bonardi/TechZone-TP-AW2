@@ -10,13 +10,19 @@
     background-color: white;
 }
 
+.navbar-brand{
+    align-self: left;
+}
+
 .titulo-pagina{
     color: #F514E1;
     font-weight: bolder;
+    text-align: center;
 }
 
 .subtitulo-pagina{
     font-weight: bold;
+    text-align: center;
 }
 
 .novedades{

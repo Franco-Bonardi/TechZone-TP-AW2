@@ -1,5 +1,5 @@
-import { navbarComponent } from "/components/navbar.js";
-import { cardComponent } from "/components/card.js";
+import { navbarComponent } from "./components/navbarIndex.js";
+import { cardComponent } from "./components/cardIndex.js";
 
 let navContainer = document.querySelector('header');
 let cardContainers = document.querySelectorAll('.cardContainer');

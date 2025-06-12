@@ -1,7 +1,6 @@
-/* Cards para categorías */
 export const cardComponent = `
         <div class="card">
-            <img src="../../assets/images/32318414_7922053.svg" alt="Ejemplo de producto">
+            <img src="./assets/images/32318414_7922053.svg" alt="Ejemplo de producto">
             <div class="card-body">
                 <h5 class="card-title titulo-prod">Título de Producto</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor, reiciendis id magni beatae officia necessitatibus inventore excepturi autem incidunt cupiditate quod vitae, corrupti ratione ipsum nostrum vero! Iure, laudantium.</p>

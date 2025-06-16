@@ -53,3 +53,7 @@ footer{
     justify-content: center;
     align-items: flex-end;
 }
+
+.subtitulo-divisorio{
+    color: #008aa8;
+}

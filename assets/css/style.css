@@ -57,3 +57,26 @@ footer{
 .subtitulo-divisorio{
     color: #008aa8;
 }
+
+.subtitulo-usuario{
+    color: #F514E1;
+}
+
+.tarjeta-usuario{
+    color: #008aa8;
+}
+
+.imagenSesionUsuario{
+    width: 50px;
+    height: 50px;
+}
+
+.tarjeta-producto{
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-producto:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}

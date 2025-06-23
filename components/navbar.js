@@ -1,10 +1,11 @@
 /* Navbar para categorías */
 const navElements = [
-    { title: 'Componentes', link: './componentes.html' },
-    { title: 'PCs', link: './PCs.html' },
-    { title: 'Periféricos', link: './perifericos.html' },
+    { title: 'Componentes', link: '../categorias/componentes.html' },
+    { title: 'PCs', link: '../categorias/PCs.html' },
+    { title: 'Periféricos', link: '../categorias/perifericos.html' },
     { title: 'Registrarse', link: '../registro/registro.html' },
-    { title: 'Iniciar Sesión', link: '../login/login.html' }
+    { title: 'Iniciar Sesión', link: '../login/login.html' },
+    { title: 'Carrito', link: '../carrito/carrito.html' }
 ]
 
 export const navbarComponent = `
@@ -26,9 +27,9 @@ export const navbarComponent = `
                             }).join('')
                         }
                     </ul>
-                    <a href="../login/login.html" class="btn btn-danger ms-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar sesión">
+                    <button class="btn btn-danger ms-auto" id="btnLogOut" data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar sesión">
                         <i class="bi bi-box-arrow-left"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
         </nav>

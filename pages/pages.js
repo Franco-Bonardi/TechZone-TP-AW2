@@ -1,6 +1,15 @@
 import { navbarComponent } from "../components/navbar.js";
+import { userCard } from "../components/usercardPages.js";
 
 let navContainer = document.querySelector('header');
+
+const getUserData = (key) => {
+    return JSON.parse(sessionStorage.getItem(key))
+}
+
+const logOut = (key) => {
+    sessionStorage.removeItem(key)
+}
 
 window.addEventListener('load', () => {
     navContainer.innerHTML = navbarComponent
@@ -14,6 +23,18 @@ window.addEventListener('load', () => {
     } else if (bodyId === 'perifericos') {
         cargarProductos('perifericos')
     }
+
+    const userInfo = getUserData('userData')
+    console.log(userInfo)
+    const userContainer = document.getElementById('userContainer')
+    const card = userCard(userInfo)
+    
+    userContainer.innerHTML = card
+    
+    document.getElementById('btnLogOut').addEventListener('click', () => {
+        logOut('userData')
+        window.location.href = '../login/login.html'
+    })
 })
 
 function cargarProductos (categoria) {
@@ -28,7 +49,7 @@ function cargarProductos (categoria) {
         productosFiltrados.forEach(producto => {
             contenedor.innerHTML += `
             <div class="col">
-                <div class="card h-100 d-flex flex-column p-3">
+                <div class="card h-100 d-flex flex-column p-3 tarjeta-producto">
                     <div class="img-container">    
                         <img src="${producto.image}" class="card-img-top" alt="${producto.name}" />
                     </div>
@@ -42,10 +63,10 @@ function cargarProductos (categoria) {
                                 <p class="price"><strong>$${producto.price}</strong></p>
                             </div>
                             <div class="col">
-                                <input type="number" class="form-control" min="1" placeholder="1">
+                                <input type="number" class="form-control input-cantidad" min="1" placeholder="1">
                             </div>
                             <div class="col">
-                                <button class="btn btn-success"><i class="bi bi-bag-plus-fill"></i></button>
+                                <button class="btn btn-success agregar-carrito" data-id="${producto.id}" data-nombre="${producto.name}" data-precio="${producto.price}" data-imagen="${producto.image}" data-bs-toggle="tooltip" data-bs-placement="top" title="Añadir al carrito"><i class="bi bi-bag-plus-fill"></i></button>
                             </div>
                         </div>
                     </div>
@@ -53,5 +74,36 @@ function cargarProductos (categoria) {
             </div>
             `
         })
+        document.querySelectorAll(".agregar-carrito").forEach(boton => {
+        boton.addEventListener("click", (e) => {
+            const cardFooter = boton.closest(".card-footer");
+            const inputCantidad = cardFooter.querySelector(".input-cantidad");
+            const cantidad = parseInt(inputCantidad.value) || 1;
+            const producto = {
+            id: boton.dataset.id,
+            nombre: boton.dataset.nombre,
+            precio: parseFloat(boton.dataset.precio),
+            imagen: boton.dataset.imagen,
+            cantidad: cantidad
+            };
+
+            agregarAlCarrito(producto);
+        });
+        });
     })
+}
+
+function agregarAlCarrito(producto) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    // Buscar si el producto ya está en el carrito
+    const index = carrito.findIndex(p => p.id === producto.id);
+
+    if (index !== -1) {
+        carrito[index].cantidad += producto.cantidad;
+    } else {
+        carrito.push(producto);
+    }
+
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }

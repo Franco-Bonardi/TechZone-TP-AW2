@@ -3,7 +3,8 @@ const navElements = [
     { title: 'PCs', link: './pages/categorias/PCs.html' },
     { title: 'Periféricos', link: './pages/categorias/perifericos.html' },
     { title: 'Registrarse', link: './pages/registro/registro.html' },
-    { title: 'Iniciar Sesión', link: './pages/login/login.html' }
+    { title: 'Iniciar Sesión', link: './pages/login/login.html' },
+    { title: 'Carrito', link: './pages/carrito/carrito.html' }
 ]
 
 export const navbarComponent = `
@@ -25,9 +26,9 @@ export const navbarComponent = `
                             }).join('')
                         }
                     </ul>
-                    <a href="./pages/login/login.html" class="btn btn-danger ms-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar sesión">
+                    <button class="btn btn-danger ms-auto" id="btnLogOut" data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar sesión">
                         <i class="bi bi-box-arrow-left"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
         </nav>

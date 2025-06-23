@@ -1,0 +1,32 @@
+[
+    {
+        "numeroUsuario": 1,
+        "nombre": "Franco",
+        "apellido": "Bonardi",
+        "contraseña": "123",
+        "email": "franco@ejemplo.com",
+        "direccion": "calle de ejemplo 1, Córdoba",
+        "formaEntrega": 1,
+        "nacimiento": "11/11/1111"
+    },
+    {
+        "numeroUsuario": 2,
+        "nombre": "Antonio",
+        "apellido": "Caminos",
+        "contraseña": "123",
+        "email": "antonio@ejemplo.com",
+        "direccion": "calle de ejemplo 2, Córdoba",
+        "formaEntrega": 2,
+        "nacimiento": "11/11/1111"
+    },
+    {
+        "numeroUsuario": 3,
+        "nombre": "Pepe",
+        "apellido": "Gomez",
+        "contraseña": "123",
+        "email": "pepe@ejemplo.com",
+        "direccion": "calle de ejemplo 3, Santa Fe",
+        "formaEntrega": 1,
+        "nacimiento": "11/11/1111"
+    }
+]

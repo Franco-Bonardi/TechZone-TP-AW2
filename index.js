@@ -14,7 +14,7 @@ const logOut = (key) => {
 window.addEventListener('load', () => {
     navContainer.innerHTML = navbarComponent
 
-    cargarProductos('destacados')
+    cargarProductos()
     
     const userInfo = getUserData('userData')
     console.log(userInfo)
@@ -29,14 +29,14 @@ window.addEventListener('load', () => {
     })
 })
 
-function cargarProductos (categoria) {
+function cargarProductos () {
     fetch(`./data/productos.json`)
     .then(res => res.json())
     .then(data => {
         const contenedor = document.getElementById("tarjeta")
         contenedor.innerHTML = ""
 
-        const productosFiltrados = data.filter( producto => producto.category === categoria )
+        const productosFiltrados = data.filter( producto => producto.destacado == true )
 
         productosFiltrados.forEach(producto => {
             contenedor.innerHTML += `
@@ -99,3 +99,4 @@ function agregarAlCarrito(producto) {
 
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
+

@@ -5,7 +5,8 @@
     "description": "Disco SSD NVMe de 500GB para mejorar el rendimiento de tu PC.",
     "image": "../../assets/images/SSD_Kingston_A2000_500GB.webp",
     "price": 55.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "Procesador de 6 núcleos y 12 hilos para tareas exigentes.",
     "image": "../../assets/images/Procesador_Intel_Core i5-11600K.webp",
     "price": 239.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "Mouse gamer con sensor de 16K DPI y 11 botones programables.",
     "image": "../../assets/images/Mouse Logitech G502 HERO.webp",
     "price": 49.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "description": "PC de escritorio todo en uno con pantalla de 23.8 pulgadas y procesador AMD Ryzen 5.",
     "image": "../../assets/images/PC de escritorio HP Pavilion.webp",
     "price": 699.99,
-    "category": "PCs"
+    "category": "PCs",
+    "destacado": false
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "description": "Monitor curvo de 27 pulgadas, resolución 2560x1440p, ideal para juegos y productividad.",
     "image": "../../assets/images/Monitor Samsung Curvo 27.webp",
     "price": 199.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "description": "Tarjeta gráfica ideal para gaming de alto rendimiento y creación de contenido.",
     "image": "../../assets/images/Tarjeta_Gráfica_NVIDIA_GeForce_RTX 3060.webp",
     "price": 399.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "description": "Teclado mecánico RGB con teclas programables, ideal para gamers.",
     "image": "../../assets/images/Teclado mecánico Corsair K95.webp",
     "price": 149.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "description": "Laptop gamer con pantalla de 15.6\" y procesador AMD Ryzen 7.",
     "image": "../../assets/images/Laptop Lenovo Legion 5.webp",
     "price": 1199.99,
-    "category": "PCs"
+    "category": "PCs",
+    "destacado": false
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "description": "Auriculares gaming con sonido 7.1 virtual, ideales para largas sesiones de juego.",
     "image": "../../assets/images/Auriculares HyperX Cloud II.webp",
     "price": 89.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "description": "Fuente de alimentación de 600W con certificación 80 PLUS.",
     "image": "../../assets/images/Fuente de alimentación EVGA 600W.webp",
     "price": 49.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "description": "Placa base ATX compatible con AMD Ryzen 3000 series.",
     "image": "../../assets/images/Placa base MSI B450 TOMAHAWK MAX.webp",
     "price": 99.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "description": "Procesador de 6 núcleos y 12 hilos, ideal para tareas multitarea y gaming.",
     "image": "../../assets/images/Procesador AMD Ryzen 5 3600.webp",
     "price": 199.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "description": "Teclado mecánico con interruptores ópticos y retroiluminación RGB.",
     "image": "../../assets/images/Teclado mecánico Razer Huntsman Elite.webp",
     "price": 229.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "description": "PC todo en uno con procesador Intel Core i7 y pantalla 4K.",
     "image": "../../assets/images/PC de escritorio Dell XPS 8930.webp",
     "price": 999.99,
-    "category": "PCs"
+    "category": "PCs",
+    "destacado": false
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "description": "Monitor 1080p con tasa de refresco de 165Hz y soporte G-Sync.",
     "image": "../../assets/images/Monitor ASUS TUF Gaming 27.webp",
     "price": 299.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "description": "Cámara web HD con enfoque automático, ideal para streaming.",
     "image": "../../assets/images/Cámara web Logitech C920 HD Pro.webp",
     "price": 79.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "description": "Placa base ATX para procesadores Intel Core de 10ª generación.",
     "image": "../../assets/images/Placa base ASUS ROG Strix Z490-E.webp",
     "price": 259.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "description": "Tarjeta gráfica para gaming en 4K con ray tracing.",
     "image": "../../assets/images/Tarjeta gráfica AMD Radeon RX 6800 XT.webp",
     "price": 649.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "description": "PC gamer de alto rendimiento con procesador Intel Core i9.",
     "image": "../../assets/images/PC Gaming HP OMEN 30L.webp",
     "price": 2399.99,
-    "category": "PCs"
+    "category": "PCs",
+    "destacado": false
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "description": "Mouse gamer con sensor de 16,000 DPI y diseño ergonómico.",
     "image": "../../assets/images/Mouse Razer DeathAdder Elite.webp",
     "price": 69.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "description": "Fuente de alimentación de 850W con certificación 80 PLUS Gold.",
     "image": "../../assets/images/Fuente de alimentación Corsair RM850x.webp",
     "price": 129.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "description": "Auriculares inalámbricos con sonido envolvente DTS Headphone:X.",
     "image": "../../assets/images/Auriculares SteelSeries Arctis 7.webp",
     "price": 149.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "description": "Disco duro mecánico de 2TB para almacenamiento masivo.",
     "image": "../../assets/images/Disco duro Seagate Barracuda 2TB.webp",
     "price": 59.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "description": "PC todo en uno con pantalla táctil de 23.8\" y procesador Intel Core i5.",
     "image": "../../assets/images/PC All-in-One Lenovo IdeaCentre.webp",
     "price": 849.99,
-    "category": "PCs"
+    "category": "PCs",
+    "destacado": false
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "description": "Teclado mecánico modular con interruptores intercambiables.",
     "image": "../../assets/images/Teclado Logitech G Pro X.webp",
     "price": 129.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "description": "Monitor 4K de 27\" con excelente precisión de color.",
     "image": "../../assets/images/Monitor Dell UltraSharp U2720Q.webp",
     "price": 599.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "description": "Procesador de 8 núcleos y 16 hilos para aplicaciones exigentes.",
     "image": "../../assets/images/Procesador Intel Core i7-11700K.webp",
     "price": 349.99,
-    "category": "componentes"
+    "category": "componentes",
+    "destacado": false
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "description": "PC gamer con procesador AMD Ryzen 9 y tarjeta gráfica NVIDIA RTX 3080.",
     "image": "../../assets/images/PC Alienware Aurora Ryzen Edition.webp",
     "price": 3199.99,
-    "category": "PCs"
+    "category": "PCs",
+    "destacado": false
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "description": "Auriculares gaming con sonido 7.1 y micrófono con cancelación de ruido.",
     "image": "../../assets/images/Auriculares Logitech G Pro X.webp",
     "price": 129.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "description": "Mouse inalámbrico gamer con sensor de 16,000 DPI y retroiluminación RGB.",
     "image": "../../assets/images/Mouse Corsair Dark Core RGBSE.webp",
     "price": 89.99,
-    "category": "perifericos"
+    "category": "perifericos",
+    "destacado": false
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@
     "description": "PC de escritorio todo en uno con pantalla de 23.8 pulgadas y procesador AMD Ryzen 5.",
     "image": "./assets/images/PC de escritorio HP Pavilion.webp",
     "price": 699.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@
     "description": "Monitor curvo de 27 pulgadas, resolución 2560x1440p, ideal para juegos y productividad.",
     "image": "./assets/images/Monitor Samsung Curvo 27.webp",
     "price": 199.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@
     "description": "Laptop gamer con pantalla de 15.6\" y procesador AMD Ryzen 7.",
     "image": "./assets/images/Laptop Lenovo Legion 5.webp",
     "price": 1199.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@
     "description": "Placa base ATX compatible con AMD Ryzen 3000 series.",
     "image": "./assets/images/Placa base MSI B450 TOMAHAWK MAX.webp",
     "price": 99.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@
     "description": "Procesador de 6 núcleos y 12 hilos, ideal para tareas multitarea y gaming.",
     "image": "./assets/images/Procesador AMD Ryzen 5 3600.webp",
     "price": 199.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@
     "description": "Teclado mecánico modular con interruptores intercambiables.",
     "image": "./assets/images/Teclado Logitech G Pro X.webp",
     "price": 129.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@
     "description": "PC gamer con procesador AMD Ryzen 9 y tarjeta gráfica NVIDIA RTX 3080.",
     "image": "./assets/images/PC Alienware Aurora Ryzen Edition.webp",
     "price": 3199.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
   },
   {
     "id": 38,
@@ -301,6 +338,61 @@
     "description": "Disco duro mecánico de 2TB para almacenamiento masivo.",
     "image": "./assets/images/Disco duro Seagate Barracuda 2TB.webp",
     "price": 59.99,
-    "category": "destacados"
+    "category": "destacados",
+    "destacado": true
+  },
+  {
+    "id": 39,
+    "name": "Memoria RAM Toshiba X8",
+    "description": "Memoria RAM para PC de 8 GB",
+    "image": "",
+    "price": 60.21,
+    "category": "componentes",
+    "destacado": "false"
+  },
+  {
+    "id": 40,
+    "name": "Memoria RAM Toshiba X4",
+    "description": "Memoria RAM para PC de 4 GB",
+    "image": "",
+    "price": 38.2,
+    "category": "componentes",
+    "destacado": false
+  },
+  {
+    "id": 41,
+    "name": "PC Ultra HP",
+    "description": "PC de escritorio HP última generación pro",
+    "image": "",
+    "price": 2999.3,
+    "category": "PCs",
+    "destacado": false
+  },
+  {
+    "id": 42,
+    "name": "Notebook Ultra Lenovo",
+    "description": "Notebook Lenovo última generación",
+    "image": "./",
+    "price": 3699.9,
+    "category": "PCs",
+    "destacado": false
+  },
+  {
+    "id": 43,
+    "name": "Monitor Samsung 24'' FHD",
+    "description": "Monitor LED de 24 pulgadas Full HD.",
+    "image": "../../assets/images/monitor.webp",
+    "price": 129.99,
+    "category": "perifericos",
+    "destacado": false
+  },
+  {
+    "id": 44,
+    "name": "Auriculares Red Dragon V",
+    "description": "Auriculares gamer pro",
+    "image": "./",
+    "price": 37.19,
+    "category": "perifericos",
+    "destacado": false
   }
 ]

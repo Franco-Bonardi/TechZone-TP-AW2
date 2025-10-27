@@ -1,132 +1,182 @@
 [
-    {
-        "idUsuario": 1,
-        "nombre": "Franco",
-        "apellido": "Bonardi",
-        "contraseña": "123",
-        "email": "franco@ejemplo.com",
-        "direccion": "calle de ejemplo 1, Córdoba",
-        "formaEntrega": 1,
-        "nacimiento": "11/11/1111"
-    },
-    {
-        "idUsuario": 2,
-        "nombre": "Antonio",
-        "apellido": "Caminos",
-        "contraseña": "123",
-        "email": "antonio@ejemplo.com",
-        "direccion": "calle de ejemplo 2, Córdoba",
-        "formaEntrega": 2,
-        "nacimiento": "11/11/1111"
-    },
-    {
-        "idUsuario": 3,
-        "nombre": "Pepe",
-        "apellido": "Gomez",
-        "contraseña": "123",
-        "email": "pepe@ejemplo.com",
-        "direccion": "calle de ejemplo 3, Santa Fe",
-        "formaEntrega": 1,
-        "nacimiento": "11/11/1111"
-    },
-    {
-        "idUsuario": 4,
-        "nombre": "Laura",
-        "apellido": "Martinez",
-        "contraseña": "abc123",
-        "email": "laura.m@ejemplo.com",
-        "direccion": "av. siempre viva 123, Buenos Aires",
-        "formaEntrega": 2,
-        "nacimiento": "10/05/1990"
-    },
-    {
-        "idUsuario": 5,
-        "nombre": "Carlos",
-        "apellido": "Lopez",
-        "contraseña": "pass1234",
-        "email": "carlos.lopez@ejemplo.com",
-        "direccion": "calle falsa 456, Mendoza",
-        "formaEntrega": 1,
-        "nacimiento": "22/08/1985"
-    },
-    {
-        "idUsuario": 6,
-        "nombre": "Mariana",
-        "apellido": "Ruiz",
-        "contraseña": "mariana321",
-        "email": "mariana.ruiz@ejemplo.com",
-        "direccion": "pasaje los sauces 321, Rosario",
-        "formaEntrega": 2,
-        "nacimiento": "15/03/1992"
-    },
-    {
-        "idUsuario": 7,
-        "nombre": "Diego",
-        "apellido": "Fernandez",
-        "contraseña": "dieguito",
-        "email": "diego.fernandez@ejemplo.com",
-        "direccion": "barrio norte 789, Córdoba",
-        "formaEntrega": 1,
-        "nacimiento": "30/12/1980"
-    },
-    {
-        "idUsuario": 8,
-        "nombre": "Lucía",
-        "apellido": "Moreno",
-        "contraseña": "lucia456",
-        "email": "lucia.moreno@ejemplo.com",
-        "direccion": "av. central 1010, Salta",
-        "formaEntrega": 2,
-        "nacimiento": "05/06/1995"
-    },
-    {
-        "idUsuario": 9,
-        "nombre": "Matías",
-        "apellido": "Peralta",
-        "contraseña": "mati999",
-        "email": "matias.peralta@ejemplo.com",
-        "direccion": "villa del parque 202, Buenos Aires",
-        "formaEntrega": 1,
-        "nacimiento": "19/07/1987"
-    },
-    {
-        "idUsuario": 10,
-        "nombre": "Valentina",
-        "apellido": "Sosa",
-        "contraseña": "valevale",
-        "email": "valentina.sosa@ejemplo.com",
-        "direccion": "avenida del sol 55, San Luis",
-        "formaEntrega": 2,
-        "nacimiento": "01/01/1998"
-    },
-    {
-        "idUsuario": 11,
-        "nombre": "Javier",
-        "apellido": "Torres",
-        "contraseña": "javi123",
-        "email": "javier.torres@ejemplo.com",
-        "direccion": "los alamos 77, Córdoba",
-        "formaEntrega": 1,
-        "nacimiento": "14/02/1990"
-    },
-    {
-        "idUsuario": 12,
-        "nombre": "Camila",
-        "apellido": "Paz",
-        "contraseña": "camipaz",
-        "email": "camila.paz@ejemplo.com",
-        "direccion": "barrio centro 99, Tucumán",
-        "formaEntrega": 2,
-        "nacimiento": "25/09/1993"
-    },
-    {
-        "idUsuario": 13,
-        "nombre": "Bruno",
-        "apellido": "Ibarra",
-        "contraseña": "bruno2021",
-        "email": "bruno.ibarra@ejemplo.com",
-        "direccion": "zona oeste 100, Jujuy",
-        "formaEntrega": 1,
-        "nacimiento": "11/04/1989"
-    }
+  {
+    "idUsuario": 1,
+    "nombre": "Franco",
+    "apellido": "Bonardi",
+    "contraseña": "123",
+    "email": "franco@ejemplo.com",
+    "direccion": "Calle de ejemplo 1, Córdoba",
+    "formaEntrega": 1,
+    "nacimiento": "11/11/1111"
+  },
+  {
+    "idUsuario": 2,
+    "nombre": "Antonio",
+    "apellido": "Caminos",
+    "contraseña": "123",
+    "email": "antonio@ejemplo.com",
+    "direccion": "calle de ejemplo 2, Córdoba",
+    "formaEntrega": 2,
+    "nacimiento": "11/11/1111"
+  },
+  {
+    "idUsuario": 3,
+    "nombre": "Pepe",
+    "apellido": "Gomez",
+    "contraseña": "123",
+    "email": "pepe@ejemplo.com",
+    "direccion": "calle de ejemplo 3, Santa Fe",
+    "formaEntrega": 1,
+    "nacimiento": "11/11/1111"
+  },
+  {
+    "idUsuario": 4,
+    "nombre": "Laura",
+    "apellido": "Martinez",
+    "contraseña": "abc123",
+    "email": "laura.m@ejemplo.com",
+    "direccion": "av. siempre viva 123, Buenos Aires",
+    "formaEntrega": 2,
+    "nacimiento": "10/05/1990"
+  },
+  {
+    "idUsuario": 5,
+    "nombre": "Carlos",
+    "apellido": "Lopez",
+    "contraseña": "pass1234",
+    "email": "carlos.lopez@ejemplo.com",
+    "direccion": "calle falsa 456, Mendoza",
+    "formaEntrega": 1,
+    "nacimiento": "22/08/1985"
+  },
+  {
+    "idUsuario": 6,
+    "nombre": "Mariana",
+    "apellido": "Ruiz",
+    "contraseña": "mariana321",
+    "email": "mariana.ruiz@ejemplo.com",
+    "direccion": "pasaje los sauces 321, Rosario",
+    "formaEntrega": 2,
+    "nacimiento": "15/03/1992"
+  },
+  {
+    "idUsuario": 7,
+    "nombre": "Diego",
+    "apellido": "Fernandez",
+    "contraseña": "dieguito",
+    "email": "diego.fernandez@ejemplo.com",
+    "direccion": "barrio norte 789, Córdoba",
+    "formaEntrega": 1,
+    "nacimiento": "30/12/1980"
+  },
+  {
+    "idUsuario": 8,
+    "nombre": "Lucía",
+    "apellido": "Moreno",
+    "contraseña": "lucia456",
+    "email": "lucia.moreno@ejemplo.com",
+    "direccion": "av. central 1010, Salta",
+    "formaEntrega": 2,
+    "nacimiento": "05/06/1995"
+  },
+  {
+    "idUsuario": 9,
+    "nombre": "Matías",
+    "apellido": "Peralta",
+    "contraseña": "mati999",
+    "email": "matias.peralta@ejemplo.com",
+    "direccion": "villa del parque 202, Buenos Aires",
+    "formaEntrega": 1,
+    "nacimiento": "19/07/1987"
+  },
+  {
+    "idUsuario": 10,
+    "nombre": "Valentina",
+    "apellido": "Sosa",
+    "contraseña": "valevale",
+    "email": "valentina.sosa@ejemplo.com",
+    "direccion": "avenida del sol 55, San Luis",
+    "formaEntrega": 2,
+    "nacimiento": "01/01/1998"
+  },
+  {
+    "idUsuario": 11,
+    "nombre": "Javier",
+    "apellido": "Torres",
+    "contraseña": "javi123",
+    "email": "javier.torres@ejemplo.com",
+    "direccion": "los alamos 77, Córdoba",
+    "formaEntrega": 1,
+    "nacimiento": "14/02/1990"
+  },
+  {
+    "idUsuario": 12,
+    "nombre": "Camila",
+    "apellido": "Paz",
+    "contraseña": "camipaz",
+    "email": "camila.paz@ejemplo.com",
+    "direccion": "barrio centro 99, Tucumán",
+    "formaEntrega": 2,
+    "nacimiento": "25/09/1993"
+  },
+  {
+    "idUsuario": 13,
+    "nombre": "Bruno",
+    "apellido": "Ibarra",
+    "contraseña": "bruno2021",
+    "email": "bruno.ibarra@ejemplo.com",
+    "direccion": "zona oeste 100, Jujuy",
+    "formaEntrega": 1,
+    "nacimiento": "11/04/1989"
+  },
+  {
+    "idUsuario": 14,
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "email": "juanperez@ejemplo.com",
+    "contraseña": "123456",
+    "direccion": "Calle Falsa 123",
+    "formaEntrega": 1,
+    "fechaNacimiento": "12/05/1990"
+  },
+  {
+    "idUsuario": 15,
+    "nombre": "María",
+    "apellido": "LaDelBarrio",
+    "email": "mariaBarrio@ejemplo.com",
+    "contraseña": "maria123",
+    "direccion": "Calle Falsa 1321",
+    "formaEntrega": 2,
+    "fechaNacimiento": "17/09/1979"
+  },
+  {
+    "idUsuario": 16,
+    "nombre": "Juana",
+    "apellido": "BCRA",
+    "email": "juanab@ejemplo.com",
+    "contraseña": "juanita89",
+    "direccion": "Calle Falsa 14",
+    "formaEntrega": 2,
+    "fechaNacimiento": "08/10/1989"
+  },
+  {
+    "idUsuario": 17,
+    "nombre": "Juana",
+    "apellido": "González",
+    "contraseña": "juanita99",
+    "email": "juanag@ejemplo.com",
+    "direccion": "Calle Falsa 18",
+    "formaEntrega": 2,
+    "nacimiento": "30/12/1987"
+  },
+  {
+    "idUsuario": 18,
+    "nombre": "Estefanía",
+    "apellido": "Quiroga",
+    "contraseña": "987",
+    "email": "estefania@ejemplo.com",
+    "direccion": "Calla Falsa de San Luis 15, San Luis",
+    "formaEntrega": 1,
+    "nacimiento": "09/04/1998"
+  }
 ]

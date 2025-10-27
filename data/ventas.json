@@ -3,9 +3,18 @@
     "id": 1,
     "idUsuario": 4,
     "fecha": "2025-08-15",
-    "total": 129.98,
+    "total": 105.98,
     "direccion": "av. siempre viva 123, Buenos Aires",
-    "productos": [1, 3]
+    "productos": [
+      {
+        "idProducto": 1,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 3,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 2,
@@ -13,31 +22,59 @@
     "fecha": "2025-08-16",
     "total": 55.99,
     "direccion": "barrio norte 789, Córdoba",
-    "productos": [1]
+    "productos": [
+      {
+        "idProducto": 1,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 3,
     "idUsuario": 9,
     "fecha": "2025-08-17",
-    "total": 199.99,
+    "total": 939.98,
     "direccion": "villa del parque 202, Buenos Aires",
-    "productos": [2, 4]
+    "productos": [
+      {
+        "idProducto": 2,
+        "cantidad": 2
+      },
+      {
+        "idProducto": 4,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 4,
     "idUsuario": 1,
     "fecha": "2025-08-18",
-    "total": 89.99,
+    "total": 199.99,
     "direccion": "calle de ejemplo 1, Córdoba",
-    "productos": [5]
+    "productos": [
+      {
+        "idProducto": 5,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 5,
     "idUsuario": 10,
     "fecha": "2025-08-19",
-    "total": 129.98,
+    "total": 105.98,
     "direccion": "avenida del sol 55, San Luis",
-    "productos": [1, 3]
+    "productos": [
+      {
+        "idProducto": 1,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 3,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 6,
@@ -45,38 +82,147 @@
     "fecha": "2025-08-20",
     "total": 55.99,
     "direccion": "barrio centro 99, Tucumán",
-    "productos": [1]
+    "productos": [
+      {
+        "idProducto": 1,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 7,
     "idUsuario": 2,
     "fecha": "2025-08-21",
-    "total": 249.99,
+    "total": 549.98,
     "direccion": "calle de ejemplo 2, Córdoba",
-    "productos": [6, 7]
+    "productos": [
+      {
+        "idProducto": 6,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 7,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 8,
     "idUsuario": 6,
     "fecha": "2025-08-22",
-    "total": 144.99,
+    "total": 439.98,
     "direccion": "pasaje los sauces 321, Rosario",
-    "productos": [2, 5]
+    "productos": [
+      {
+        "idProducto": 2,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 5,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 9,
     "idUsuario": 8,
     "fecha": "2025-08-23",
-    "total": 99.99,
+    "total": 699.99,
     "direccion": "av. central 1010, Salta",
-    "productos": [4]
+    "productos": [
+      {
+        "idProducto": 4,
+        "cantidad": 1
+      }
+    ]
   },
   {
     "id": 10,
     "idUsuario": 13,
     "fecha": "2025-08-24",
-    "total": 199.98,
+    "total": 345.97,
     "direccion": "zona oeste 100, Jujuy",
-    "productos": [1, 2, 3]
+    "productos": [
+      {
+        "idProducto": 1,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 2,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 3,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "idUsuario": 13,
+    "fecha": "2024-09-05",
+    "total": 439.98,
+    "direccion": "av. Gauss, zona norte, Córdoba",
+    "productos": [
+      {
+        "idProducto": 2,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 5,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "idUsuario": 13,
+    "fecha": "2024-11-25",
+    "total": 439.98,
+    "direccion": "av. Rivera Indarte, zona norte, Córdoba",
+    "productos": [
+      {
+        "idProducto": 2,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 5,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "idUsuario": 9,
+    "fecha": "2025-10-25",
+    "total": 449.98,
+    "direccion": "Av. Luchesse, zona norte, Córdoba",
+    "productos": [
+      {
+        "idProducto": 2,
+        "cantidad": 2
+      },
+      {
+        "idProducto": 4,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "idUsuario": 2,
+    "fecha": "2025-10-25",
+    "total": 439.98,
+    "direccion": "Av. Luchesse, zona norte, Córdoba",
+    "productos": [
+      {
+        "idProducto": 2,
+        "cantidad": 1
+      },
+      {
+        "idProducto": 5,
+        "cantidad": 1
+      }
+    ]
   }
 ]

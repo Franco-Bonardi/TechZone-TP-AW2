@@ -24,7 +24,7 @@ router.get('/byIdUsuario/:idUsuario', (req, res) => {
 
     res.status(200).json(resultWithNames)
   } else {
-    res.status(400).json(`El id de usuario número ${id} no existe, o no se registran ventas a ese usuario aún.`)
+    res.status(404).json(`El id de usuario número ${id} no existe, o no se registran ventas a ese usuario aún.`)
   }
 })
 
@@ -38,7 +38,7 @@ router.get('/porIdProducto/:producto', (req, res) => {
     if (result.length > 0){
         res.status(200).json(result)
     } else {
-        res.status(400).json(`No se registran ventas del producto consultado aún.`)
+        res.status(404).json(`No se registran ventas del producto consultado aún.`)
     }
 })
 

@@ -6,6 +6,37 @@ const router = Router()
 const archivoProductos = await readFile('./data/productos.json', 'utf-8')
 const productosData = JSON.parse(archivoProductos)
 
+/* otra forma de hacer los dos renglones anterior de manera asíncrona, por si no funciona así:
+    const getData = async()=>{
+        const archivoProductos = await readFile('./data/productos.json', 'utf-8')
+        return JSON.parse(archivoProductos)
+    }
+*/
+
+router.get('/porCategoria/:category', (req, res) => {
+    const categoria = req.params.category
+
+    if (categoria === 'componentes' || categoria === 'PCs' || categoria === 'perifericos') {
+        const result = productosData.filter(e => e.category === categoria);
+        if(result.length > 0){
+            res.status(200).json(result)
+        } else{
+            res.status(404).json(`No hay productos en la categoría ${categoria}.`)
+        }
+    } else{
+        res.status(400).json(`La categoría ingresada es incorrecta. Escriba "componentes", "PCs" o "perifericos"`)
+    }
+})
+
+router.get('/listadoCompleto', (req, res) => {
+
+    if (productosData.length > 0) {
+        res.status(200).json(productosData)
+    } else {
+        res.status(404).json(`No hay productos cargados para mostrar.`)
+    }
+})
+
 router.get('/byId/:id', (req, res) => {
     const id = parseInt(req.params.id)
 
@@ -18,7 +49,7 @@ router.get('/byId/:id', (req, res) => {
     if (result){
         res.status(200).json(result)
     } else {
-        res.status(400).json(`El id de producto número ${id} no existe`)
+        res.status(404).json(`El id de producto número ${id} no existe`)
     }
 })
 
@@ -30,7 +61,7 @@ router.get('/porNombre/:name', (req, res) => {
     if (result){
         res.status(200).json(result)
     } else {
-        res.status(400).json(`No se encuentra registrado el producto ${nombre}`)
+        res.status(404).json(`No se encuentra registrado el producto ${nombre}`)
     }
 })
 
@@ -111,7 +142,7 @@ router.post('/porCategoria', (req, res) => {
         if(result.length > 0){
             res.status(200).json(result)
         } else{
-            res.status(400).json(`No hay productos en la categoría ${categoria}.`)
+            res.status(404).json(`No hay productos en la categoría ${categoria}.`)
         }
     } else{
         res.status(400).json(`La categoría ingresada es incorrecta. Escriba "componentes", "PCs" o "perifericos"`)

@@ -340,59 +340,5 @@
     "price": 59.99,
     "category": "destacados",
     "destacado": true
-  },
-  {
-    "id": 39,
-    "name": "Memoria RAM Toshiba X8",
-    "description": "Memoria RAM para PC de 8 GB",
-    "image": "",
-    "price": 60.21,
-    "category": "componentes",
-    "destacado": "false"
-  },
-  {
-    "id": 40,
-    "name": "Memoria RAM Toshiba X4",
-    "description": "Memoria RAM para PC de 4 GB",
-    "image": "",
-    "price": 38.2,
-    "category": "componentes",
-    "destacado": false
-  },
-  {
-    "id": 41,
-    "name": "PC Ultra HP",
-    "description": "PC de escritorio HP última generación pro",
-    "image": "",
-    "price": 2999.3,
-    "category": "PCs",
-    "destacado": false
-  },
-  {
-    "id": 42,
-    "name": "Notebook Ultra Lenovo",
-    "description": "Notebook Lenovo última generación",
-    "image": "./",
-    "price": 3699.9,
-    "category": "PCs",
-    "destacado": false
-  },
-  {
-    "id": 43,
-    "name": "Monitor Samsung 24'' FHD",
-    "description": "Monitor LED de 24 pulgadas Full HD.",
-    "image": "../../assets/images/monitor.webp",
-    "price": 129.99,
-    "category": "perifericos",
-    "destacado": false
-  },
-  {
-    "id": 44,
-    "name": "Auriculares Red Dragon V",
-    "description": "Auriculares gamer pro",
-    "image": "./",
-    "price": 37.19,
-    "category": "perifericos",
-    "destacado": false
   }
 ]

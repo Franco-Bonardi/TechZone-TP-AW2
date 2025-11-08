@@ -224,5 +224,93 @@
         "cantidad": 1
       }
     ]
+  },
+  {
+    "id": 15,
+    "idUsuario": 1,
+    "fecha": "2025-11-07",
+    "total": 4471.86,
+    "direccion": "Calle de ejemplo 1, Córdoba",
+    "productos": [
+      {
+        "idProducto": "1",
+        "cantidad": 2
+      },
+      {
+        "idProducto": "2",
+        "cantidad": 3
+      },
+      {
+        "idProducto": "12",
+        "cantidad": 5
+      },
+      {
+        "idProducto": "19",
+        "cantidad": 1
+      },
+      {
+        "idProducto": "9",
+        "cantidad": 2
+      },
+      {
+        "idProducto": "23",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "idUsuario": 1,
+    "fecha": "2025-11-07",
+    "total": 3299.97,
+    "direccion": "Calle de ejemplo 1, Córdoba",
+    "productos": [
+      {
+        "idPproducto": "28",
+        "cantidad": 1
+      },
+      {
+        "idPproducto": "3",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "idUsuario": 1,
+    "fecha": "2025-11-07",
+    "total": 457.95,
+    "direccion": "Calle de ejemplo 1, Córdoba",
+    "productos": [
+      {
+        "idPproducto": "1",
+        "cantidad": 3
+      },
+      {
+        "idPproducto": "2",
+        "cantidad": 1
+      },
+      {
+        "idPproducto": "3",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "idUsuario": 2,
+    "fecha": "2025-11-08",
+    "total": 899.98,
+    "direccion": "calle de ejemplo 2, Córdoba",
+    "productos": [
+      {
+        "idPproducto": "31",
+        "cantidad": 1
+      },
+      {
+        "idPproducto": "32",
+        "cantidad": 1
+      }
+    ]
   }
 ]

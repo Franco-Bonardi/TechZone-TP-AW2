@@ -1,3 +1,4 @@
+// import { auth } from "../../auth/auth.js"
 const form = document.getElementById('formLogIn')
 
 /*
@@ -27,3 +28,25 @@ form.addEventListener('submit', (e) => {
     }
   })
 })
+
+
+/* De momento no lo uso:
+form.addEventListener('submit', async (e) => {
+  e.preventDefault()
+  let userEmail = document.getElementById('txtEmail').value
+  let userPass = document.getElementById('txtContraseña').value
+
+  if (userEmail != '' && userPass != '') {
+    try{
+      const user = await auth({userEmail, userPass})
+      sessionStorage.setItem('userData', JSON.stringify(user))
+      console.log(user);
+      window.location.href = '../../index.html';
+    }catch(error){
+      console.error('Error: ', error)
+    }
+  } else{
+    alert('Correo o contraseña incorrectos');
+  }
+})
+*/

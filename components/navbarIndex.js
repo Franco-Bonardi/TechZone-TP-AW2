@@ -1,4 +1,5 @@
 const navElements = [
+    { title: 'Todos los Productos', link: './pages/categorias/listadoCompleto.html' },
     { title: 'Componentes', link: './pages/categorias/componentes.html' },
     { title: 'PCs', link: './pages/categorias/PCs.html' },
     { title: 'Periféricos', link: './pages/categorias/perifericos.html' },

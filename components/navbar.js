@@ -1,5 +1,6 @@
 /* Navbar para categorías */
 const navElements = [
+    { title: 'Todos los Productos', link: '../categorias/listadoCompleto.html' },
     { title: 'Componentes', link: '../categorias/componentes.html' },
     { title: 'PCs', link: '../categorias/PCs.html' },
     { title: 'Periféricos', link: '../categorias/perifericos.html' },

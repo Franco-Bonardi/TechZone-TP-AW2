@@ -19,3 +19,5 @@ app.listen(port, () => {
 app.use('/usuarios', usuariosRouter)
 app.use('/productos', productosRouter)
 app.use('/ventas', ventasRouter)
+
+app.use(express.static('./'))

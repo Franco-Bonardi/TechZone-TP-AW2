@@ -21,7 +21,7 @@ router.get('/byId/:idUsuario', (req, res) => {
     if (result){
         res.status(200).json(result)
     } else {
-        res.status(400).json(`El id de usuario número ${id} no existe`)
+        res.status(404).json(`El id de usuario número ${id} no existe`)
     }
 })
 
@@ -42,7 +42,7 @@ router.get('/porEmail/:email', (req, res) => {
     if (result){
         res.status(200).json(result)
     } else {
-        res.status(400).json(`No se encontró ningún usuario con ese email.`)
+        res.status(404).json(`No se encontró ningún usuario con ese email.`)
     }
 })
 
@@ -73,7 +73,7 @@ router.post('/login', (req, res) => {
 
     const result = usuariosData.find(e => e.email == emailUsuario && e.contraseña == pass)
     if(result){
-        res.status(200).json(`Logueo realizado con éxito. ¡Bienvenid@!`)
+        res.status(200).json('Login realizado con éxito')
     } else{
         res.status(400).json(`El email o la contraseña ingresados son incorrectos, o el usuario no está registrado.`)
     }

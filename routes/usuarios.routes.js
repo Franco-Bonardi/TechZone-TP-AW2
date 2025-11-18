@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { readFile, writeFile } from 'fs/promises'
+import { createUsuario, findAllUsuarios, findLastUser, findUserAndLogin } from "../db/actions/usuarios.actions.js";
 
 const router = Router()
 
@@ -8,6 +9,17 @@ const usuariosData = JSON.parse(archivoUsuarios)
 
 const archivoVentas = await readFile('./data/ventas.json', 'utf-8')
 const ventasData = JSON.parse(archivoVentas)
+
+
+router.get('/listadoCompletoUsuarios', async (req, res) => {
+    try {
+        const result = await findAllUsuarios()
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(400).json()
+    }
+})
+
 
 router.get('/byId/:idUsuario', (req, res) => {
     const id = parseInt(req.params.idUsuario)
@@ -46,7 +58,7 @@ router.get('/porEmail/:email', (req, res) => {
     }
 })
 
-router.post('/login', (req, res) => {
+router.post('/login', async (req, res) => {
     const emailUsuario = req.body.email
     const pass = req.body.contraseña
 
@@ -71,13 +83,68 @@ router.post('/login', (req, res) => {
         return res.status(400).json(`El formato del email no es válido.`)
     }
 
-    const result = usuariosData.find(e => e.email == emailUsuario && e.contraseña == pass)
-    if(result){
-        res.status(200).json('Login realizado con éxito')
-    } else{
-        res.status(400).json(`El email o la contraseña ingresados son incorrectos, o el usuario no está registrado.`)
+    try {
+        const usuarioAutenticado = await findUserAndLogin(emailUsuario, pass);
+        
+        if (usuarioAutenticado) {
+            res.status(200).json({
+                mensaje: 'Login realizado con éxito',
+                usuario: usuarioAutenticado
+            });
+        } else {
+            res.status(401).json({ mensaje: 'Credenciales incorrectas (email o contraseña no válidos).' });
+        }
+    } catch (error) {
+        console.error('Error al intentar loguear usuario:', error);
+        res.status(500).json({ mensaje: 'Error interno del servidor al procesar el login.' });
     }
 })
+
+router.post('/registro', async (req, res) => {
+    const { nombre, apellido, email, contraseña, direccion, opcionEntrega, date } = req.body;
+    
+    let nuevoIdUsuario;
+    
+    try {
+        const ultimoUsuario = await findLastUser();
+        // Si hay un último usuario, sumamos 1. Si no hay, empezamos en 1.
+        nuevoIdUsuario = ultimoUsuario ? ultimoUsuario.idUsuario + 1 : 1;
+    } catch (error) {
+        console.error('Error al calcular el nuevo idUsuario:', error);
+        return res.status(500).json({ mensaje: 'Error interno al generar ID de usuario.' });
+    }
+
+    const nuevoUsuarioData = {
+        idUsuario: nuevoIdUsuario,
+        nombre: nombre,
+        apellido: apellido,
+        email: email,
+        contraseña: contraseña,
+        direccion: direccion,
+        formaEntrega: opcionEntrega === 'opcionLocal' ? 'local' : 'envio',
+        nacimiento: date, // Mongoose lo convertirá a Date
+    };
+
+    try {
+        const usuarioCreado = await createUsuario(nuevoUsuarioData);
+
+        res.status(201).json({
+            mensaje: 'Usuario registrado con éxito.',
+            usuario: usuarioCreado
+        });
+    } catch (error) {
+        console.error('Error en el registro:', error);
+        
+        if (error.code === 11000) { // Código de error de MongoDB para duplicados (Unique index)
+            return res.status(400).json({ mensaje: 'El email ingresado ya está registrado.' });
+        }
+        
+        res.status(500).json({ mensaje: 'Error interno al registrar el usuario.' });
+    }
+});
+
+
+/*
 
 router.post('/registro', (req, res) => {
     const { nombre, apellido, contraseña, email, direccion, formaEntrega, nacimiento } = req.body
@@ -146,6 +213,9 @@ router.post('/registro', (req, res) => {
     writeFile('./data/usuarios.json', JSON.stringify(usuariosData, null, 2))
     res.status(201).json({ mensaje: 'Usuario registrado exitosamente.', usuario: nuevoUsuario })
 })
+
+*/
+
 
 router.put('/cambiarDireccion', (req, res) => {
     const id = req.body.idUsuario

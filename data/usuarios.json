@@ -137,7 +137,7 @@
     "contraseña": "123456",
     "direccion": "Calle Falsa 123",
     "formaEntrega": 1,
-    "fechaNacimiento": "12/05/1990"
+    "nacimiento": "12/05/1990"
   },
   {
     "idUsuario": 15,
@@ -147,7 +147,7 @@
     "contraseña": "maria123",
     "direccion": "Calle Falsa 1321",
     "formaEntrega": 2,
-    "fechaNacimiento": "17/09/1979"
+    "nacimiento": "17/09/1979"
   },
   {
     "idUsuario": 16,
@@ -157,7 +157,7 @@
     "contraseña": "juanita89",
     "direccion": "Calle Falsa 14",
     "formaEntrega": 2,
-    "fechaNacimiento": "08/10/1989"
+    "nacimiento": "08/10/1989"
   },
   {
     "idUsuario": 17,

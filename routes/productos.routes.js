@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { readFile, writeFile } from 'fs/promises'
+import { createProd, findAll, findByCategory } from "../db/actions/productos.actions.js";
 
 const router = Router()
 
@@ -12,6 +13,25 @@ const productosData = JSON.parse(archivoProductos)
         return JSON.parse(archivoProductos)
     }
 */
+
+
+router.get('/porCategoria/:category', async (req, res) => {
+    const categoria = req.params.category
+
+    if (categoria === 'componentes' || categoria === 'PCs' || categoria === 'perifericos') {
+        const result = await findByCategory(categoria)
+        if(result.length > 0){
+            res.status(200).json(result)
+        } else{
+            res.status(404).json(`No hay productos en la categoría ${categoria}.`)
+        }
+    } else{
+        res.status(400).json(`La categoría ingresada es incorrecta. Escriba "componentes", "PCs" o "perifericos"`)
+    }
+})
+
+
+/*
 
 router.get('/porCategoria/:category', (req, res) => {
     const categoria = req.params.category
@@ -28,6 +48,20 @@ router.get('/porCategoria/:category', (req, res) => {
     }
 })
 
+*/
+
+router.get('/listadoCompleto', async (req, res) => {
+    try {
+        const result = await findAll()
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(400).json()
+    }
+})
+
+
+/*
+
 router.get('/listadoCompleto', (req, res) => {
 
     if (productosData.length > 0) {
@@ -36,6 +70,8 @@ router.get('/listadoCompleto', (req, res) => {
         res.status(404).json(`No hay productos cargados para mostrar.`)
     }
 })
+
+*/
 
 router.get('/byId/:id', (req, res) => {
     const id = parseInt(req.params.id)
@@ -178,5 +214,20 @@ router.put('/cambiarPrecio', (req, res) => {
     }
 })
 
+/*
+
+router.post('/create', async(req, res) => {
+    const {name, description, image, price, category, destacado} = req.body
+
+    try {
+        const result = await createProd({name, description, image, price, category, destacado})
+
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(400).json()
+    }
+})
+
+*/
 
 export default router

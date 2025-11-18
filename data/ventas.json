@@ -266,11 +266,11 @@
     "direccion": "Calle de ejemplo 1, Córdoba",
     "productos": [
       {
-        "idPproducto": "28",
+        "idProducto": "28",
         "cantidad": 1
       },
       {
-        "idPproducto": "3",
+        "idProducto": "3",
         "cantidad": 2
       }
     ]
@@ -283,15 +283,15 @@
     "direccion": "Calle de ejemplo 1, Córdoba",
     "productos": [
       {
-        "idPproducto": "1",
+        "idProducto": "1",
         "cantidad": 3
       },
       {
-        "idPproducto": "2",
+        "idProducto": "2",
         "cantidad": 1
       },
       {
-        "idPproducto": "3",
+        "idProducto": "3",
         "cantidad": 1
       }
     ]
@@ -304,11 +304,11 @@
     "direccion": "calle de ejemplo 2, Córdoba",
     "productos": [
       {
-        "idPproducto": "31",
+        "idProducto": "31",
         "cantidad": 1
       },
       {
-        "idPproducto": "32",
+        "idProducto": "32",
         "cantidad": 1
       }
     ]

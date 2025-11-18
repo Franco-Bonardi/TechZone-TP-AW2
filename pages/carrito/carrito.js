@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const items = carrito.map(p => ({
-                idPproducto: p.id,
+                idProducto: p.id,
                 cantidad: p.cantidad,
             }));
             

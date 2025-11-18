@@ -2,11 +2,15 @@ import { Router } from "express";
 import { readFile, writeFile } from 'fs/promises'
 import { usuarioPorId } from "../utils/usuarios.js";
 import { productoPorId } from "../utils/productos.js";
+import { createVenta, findAllVentas } from "../db/actions/ventas.actions.js";
 
 const router = Router()
 
-const archivoVentas = await readFile('./data/ventas.json', 'utf-8')
-const ventasData = JSON.parse(archivoVentas)
+// const archivoVentas = await readFile('./data/ventas.json', 'utf-8')
+// const ventasData = JSON.parse(archivoVentas)
+
+const ventasData = await findAllVentas()
+
 
 router.get('/byIdUsuario/:idUsuario', (req, res) => {
   const id = parseInt(req.params.idUsuario)
@@ -41,6 +45,59 @@ router.get('/porIdProducto/:producto', (req, res) => {
         res.status(404).json(`No se registran ventas del producto consultado aún.`)
     }
 })
+
+
+router.post('/nuevaVenta', async (req, res) => {
+    const { idUsuario, fecha, total, direccion, productos } = req.body;
+
+    if (!idUsuario || !fecha || !total || !direccion || !productos) {
+        return res.status(400).json('Faltan datos para registrar la venta.');
+    }
+
+    try {
+        const ventasData = await findAllVentas();
+        const nuevoId = ventasData.length > 0
+            ? ventasData[ventasData.length - 1].id + 1
+            : 1;
+
+        let productosArray = productos;
+
+        if (typeof productos === 'string') {
+            try {
+                productosArray = JSON.parse(productos);
+            } catch {
+                return res.status(400).json('El formato de productos no es válido.');
+            }
+        }
+
+        if (!Array.isArray(productosArray)) {
+            return res.status(400).json('El campo productos debe ser un array.');
+        }
+
+        const nuevaVenta = {
+            id: nuevoId,
+            idUsuario,
+            fecha,
+            total,
+            direccion,
+            productos: productosArray
+        };
+
+        await createVenta(nuevaVenta);
+
+        res.status(201).json({
+            mensaje: 'Venta registrada correctamente.',
+            venta: nuevaVenta
+        });
+
+    } catch (error) {
+        console.error('Error al registrar venta:', error);
+        res.status(500).json('Error al registrar la nueva venta.');
+    }
+});
+
+
+/*
 
 router.post('/nuevaVenta', async (req, res) => {
     const { idUsuario, fecha, total, direccion, productos } = req.body
@@ -104,6 +161,8 @@ router.post('/nuevaVenta', async (req, res) => {
         res.status(500).json('Error al registrar la nueva venta.')
     }
 })
+
+*/
 
 router.post('/buscarPorFecha', (req, res) => {
     const { desde, hasta } = req.body
